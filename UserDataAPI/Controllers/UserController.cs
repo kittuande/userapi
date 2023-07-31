@@ -8,7 +8,7 @@ namespace UserDataAPI.Controllers
     [Route("[controller]")]
     public class UserController : Controller
     {
-        [Authorize]
+        [AllowAnonymous]
         [HttpGet("GetUserDetails")]
         public Data? GetUserDetails()
         {
